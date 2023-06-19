@@ -4,53 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protetores Independentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <header class="container_cabecalho">
-        <a href="teste.html" class="botao_cabecalho"><strong>HOME</strong></a>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="home-button"><a href="#"><i class="fas fa-home"></i></a></li>
+                <!-- <li><a href="#history-section" class="nav_text">HISTÓRIA</a></li>
+                <li><a href="#project-section" class="nav_text">PROJETOS</a></li>
+                <li><a href="#donation-section" class="nav_text">DOAÇÃO</a></li> -->
+                <li class="social-icons"><a href="https://www.instagram.com/somosprotetoresindependentes/"><i class="fab fa-instagram"></i></a></li>
+                <li class="social-icons"><a href="https://www.facebook.com/somosprotetoresindependentes/"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </nav>
     </header>
-<main class="main">
-    <section class="container_capa">
-        <div class="texto_banner">
-            <h2>somos</h5>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h2>Somos</h2>
             <h1>Protetores<br>Independentes</h1>
             <p>📌Guaíba - RS</p>
         </div>
-    </section>
-    <section class="container_historia">
-        <div class="tudo_historia">
-            <div class="texto_historia">
-                <h1><strong>Nossa história</strong></h1>
-                <p>Lorem ipsum dolor sit amet. Sed perferendis voluptatem in quidem possimus qui excepturi quidem. Qui assumenda unde aut pariatur consequatur ea magnam numquam sit deleniti alias sed natus voluptatem?</p><p>Aut voluptates fugiat vel quidem laborum ut dignissimos quisquam est mollitia numquam eos blanditiis fuga. Eum molestiae sunt qui maxime expedita quo nulla omnis et eveniet enim aut aliquid distinctio qui illum accusamus. Qui nihil praesentium et velit autem quo enim iure. </p><p><br>Qui fugit corporis et aliquam voluptatem non quia voluptatem ex aliquam quod eos totam iste. Eum galisum iusto eos reprehenderit provident qui corporis alias et dolorem amet et laboriosam sapiente sed blanditiis velit vel consequatur voluptatum!</p><p><br>Qui fugit corporis et aliquam voluptatem non quia voluptatem ex aliquam quod eos totam iste. Eum galisum iusto eos reprehenderit provident qui corporis alias et dolorem amet et laboriosam sapiente sed blanditiis velit vel consequatur voluptatum!</p><p>Qui fugit corporis et aliquam voluptatem non quia voluptatem ex aliquam quod eos totam iste. Eum galisum iusto eos reprehenderit provident qui corporis alias et dolorem amet et laboriosam sapiente sed blanditiis velit vel consequatur voluptatum!</p>
+    </div>
+
+    <section class="history-section" id="history-section">
+        <div class="history-content">
+            <div class="history-text">
+                <h1>Nossa história</h1>
+                <p>Lorem ipsum dolor sit amet. Sed perferendis voluptatem in quidem possimus qui excepturi quidem. Qui assumenda unde aut pariatur consequatur ea magnam numquam sit deleniti alias sed natus voluptatem?</p><p>Aut voluptates fugiat vel quidem laborum ut dignissimos quisquam est mollitia numquam eos blanditiis fuga. Eum molestiae sunt qui maxime expedita quo nulla omnis et eveniet enim aut aliquid distinctio qui illum accusamus. Qui nihil praesentium et velit autem quo enim iure. </p><p><br>Qui fugit corporis et aliquam voluptatem non quia voluptatem ex aliquam quod eos totam iste. Eum galisum iusto eos reprehenderit provident qui corporis alias et dolorem amet et laboriosam sapiente sed blanditiis velit vel consequatur voluptatum!</p>
             </div>
-            <img src="/assets/logoprotetores.png" alt="logo Protetores Independentes" width="55%" class="logo_protetores">
+        <img src="/assets/logoprotetores.png" alt="Logo Protetores Independentes" width="550px">
         </div>
     </section>
-    <section class="container_fotos">
-        <div class="imagens_fotos">
-            <img src="/assets/foto1.png" alt="Protetores" class="img1">
-            <img src="/assets/foto2.png" alt="Protetores" class="img1">
-            <img src="/assets/foto3.png" alt="Protetores" class="img1">
-            <img src="/assets/foto4.png" alt="Protetores" class="img1">
-            <img src="/assets/foto5.png" alt="Protetores" class="img2">
-            <img src="/assets/foto6.png" alt="Protetores" class="img2">
-            <img src="/assets/foto7.png" alt="Protetores" class="img2">
-            <img src="/assets/foto8.png" alt="Protetores" class="img2">
+
+    <div class="image-slider">
+        <div class="slider-container">
+            <div class="slider">
+                <img src="/assets/foto1.png" alt="Imagem 1">
+                <img src="/assets/foto2.png" alt="Imagem 2">
+                <img src="/assets/foto3.png" alt="Imagem 3">
+                <img src="/assets/foto4.png" alt="Imagem 4">
+                <img src="/assets/foto5.png" alt="Imagem 5">
+                <img src="/assets/foto6.png" alt="Imagem 3">
+                <img src="/assets/foto7.png" alt="Imagem 4">
+                <img src="/assets/foto8.png" alt="Imagem 5">
+            </div>
         </div>
-    </section>
-    <section class="container_projeto">
-        <div class="tudo_projeto">
-            <div class="texto_projeto">
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <section class="project-section" id="project-section">
+        <div class="project-content">
+            <img src="/assets/protetores.png" alt="Protetores" width="550px">
+            <div class="project-text">
                 <h1>Projetos</h1>
-                <p>Lorem ipsum dolor sit amet. Sit eaque dolorum eum repudiandae voluptas et accusamus asperiores. Aut iste alias et sequi facere id dolorem laborum. </p><p>Et velit alias aut dolorem labore sit iste placeat quo nulla esse nam sint consequatur qui quibusdam consectetur quo dolor repudiandae. Rem quam explicabo hic quidem illum sed culpa possimus ad sunt omnis. Aut quia eius est voluptas recusandae ea aliquam praesentium in alias suscipit sed esse aliquid id quis tempora et dolorem amet. </p><p>Ut nisi molestiae vel omnis odio aut fuga ipsum et fugiat numquam At nulla omnis eos nesciunt soluta sit architecto quaerat. Id commodi blanditiis et impedit consequatur aut adipisci quia et obcaecati quasi non quidem optio et enim voluptatum. Et molestias itaque qui quibusdam sequi sit molestiae nostrum id animi quos est autem aperiam sit earum possimus. Et maiores recusandae eos odio commodi est sint rerum? </p><p>Et aspernatur temporibus ad aliquam sequi 33 perspiciatis amet ut ducimus velit in galisum dicta. Ut autem iusto aut galisum voluptas aut tempora Quis? Id magni eligendi aut internos vero eos voluptas necessitatibus! </p>
+                <p>Lorem ipsum dolor sit amet. Sed perferendis voluptatem in quidem possimus qui excepturi quidem. Qui assumenda unde aut pariatur consequatur ea magnam numquam sit deleniti alias sed natus voluptatem?</p><p>Aut voluptates fugiat vel quidem laborum ut dignissimos quisquam est mollitia numquam eos blanditiis fuga. Eum molestiae sunt qui maxime expedita quo nulla omnis et eveniet enim aut aliquid distinctio qui illum accusamus. Qui nihil praesentium et velit autem quo enim iure. </p><p><br>Qui fugit corporis et aliquam voluptatem non quia voluptatem ex aliquam quod eos totam iste. Eum galisum iusto eos reprehenderit provident qui corporis alias et dolorem amet et laboriosam sapiente sed blanditiis velit vel consequatur voluptatum!</p>
             </div>
-            <img src="/assets/protetores.png" width="35%" class="imagem_protetores">
         </div>
     </section>
-</main>
-    <footer class="container_footer">
-        <p><strong>Copyright © 2023 Somos Protetores Independentes</strong></p>
+
+    <section class="donation-section" id="donation-section">
+        <div class="donation-content">
+            <div class="donation-text">
+                <h1>Como você pode nos ajudar:</h1>
+                <p>Lorem ipsum dolor sit amet. Sed perferendis voluptatem in quidem possimus qui excepturi quidem. Qui assumenda unde aut pariatur consequatur ea magnam numquam sit deleniti alias sed natus voluptatem?</p><p>Aut voluptates fugiat vel quidem laborum ut dignissimos quisquam est mollitia numquam eos blanditiis fuga. Eum molestiae sunt qui maxime expedita quo nulla omnis et eveniet enim aut aliquid distinctio qui illum accusamus. Qui nihil praesentium et velit autem quo enim iure. </p><p><br>Qui fugit corporis et aliquam voluptatem non quia voluptatem ex aliquam quod eos totam iste. Eum galisum iusto eos reprehenderit provident qui corporis alias et dolorem amet et laboriosam sapiente sed blanditiis velit vel consequatur voluptatum!</p>
+                <a class="pix-button">PÍX: 51 00000-0000 NOME SOBRENOME</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="place-name">
+                <p>Somos Protetores Independentes</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/somosprotetoresindependentes/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/somosprotetoresindependentes/"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
