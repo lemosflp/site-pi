@@ -41,13 +41,6 @@ nav ul li a:hover {
 /*  */
 
 .banner {
-    /* background: url(/assets/banner.png);
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 
     background: url(/assets/banner.png);
     background-repeat: no-repeat;
@@ -61,6 +54,7 @@ nav ul li a:hover {
 .banner-content {
     text-align: center;
     margin-bottom: 12%;
+    padding-top: 6%;
 }
 
 .banner-content h2 {
@@ -111,8 +105,8 @@ nav ul li a:hover {
     color: #333;
 }
 
-.history-text {
-    padding-left: 100px;
+.history-text p {
+    font-size: 1.7rem;
 }
 
 .project-section {
@@ -145,7 +139,7 @@ nav ul li a:hover {
 }
 
 .project-text {
-    padding-left: 100px;
+    font-size: 1.7rem;
 }
 
 .donation-section {
@@ -172,7 +166,7 @@ nav ul li a:hover {
 }
 
 .donation-content p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #333;
 }
 
@@ -274,14 +268,12 @@ footer {
 .social-icons a:hover {
     color: #ffcc00;
 }
-/* 
-@media (max-width: 1150px) 
-    .banner-content h1 {
-        font-size: 6rem;
-    }
-} */
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1300px) {
+    .banner-content {
+        padding-top: 3%;
+    }
     .banner-content h1 {
         font-size: 7rem;
     }
@@ -314,6 +306,7 @@ footer {
         display: block;
         padding-top: 0%;
     }
+    .project-content img {display:none}
 }
 
 @media (max-width: 800px) {
@@ -338,4 +331,80 @@ footer {
     }
 
 }
+
+@media (max-width: 500px) {
+    .banner-content p {
+        display: none;
+    }
+    .image-slider img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+    .banner-content p {
+        display: none;
+    }
+    .donation-content h1 {
+        font-size: 2.5rem;
+    }
+    .history-content h1 {
+        font-size: 3rem;
+    }
+    .history-text p {
+        font-size: 1.3rem;
+    }
+    .project-text p {
+        font-size: 1.3rem;
+    }
+    .donation-text p {
+        font-size: 1.3rem;
+    }
+    .project-content img {
+        display: none;
+    }
+}
+
+@media (max-width: 335px) {
+    .banner {
+        height: 200px;
+    }
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    .banner-content h2 {
+        font-size: 1rem;
+    }
+
+    .project-content h1 {
+        font-size: 3rem;
+    }
+    .history-content h1 {
+        font-size: 3.5rem;
+    }
+    .donation-content h1 {
+        font-size: 2rem;
+    }
+    .history-text p {
+        font-size: 1.3rem;
+    }
+    .image-slider img{
+        width: 320px;
+    }
+
+}
     
+@media (max-width: 225px) {
+    .banner-content h1 {
+        font-size: 1.5rem
+    }
+    .history-content h1 {
+        font-size: 2rem;
+    }
+    .project-content h1 {
+        font-size: 2.5rem;
+    }
+}
